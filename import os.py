@@ -3,7 +3,7 @@ import re
 from pathlib import Path
 from typing import List, Dict
 
-class FileAnalyzer:
+class FileAnalyzer: # Inicializa a estrutura dos dados que estão sendo analizados
     def __init__(self):
         self.current_data = {
             'classes': [],
@@ -14,7 +14,7 @@ class FileAnalyzer:
         }
         self.current_file = None
 
-    def reset(self):
+    def reset(self): # reseta a estrutura de dados sendo analizados
         self.current_data = {
             'classes': [],
             'structs': [],
@@ -23,19 +23,19 @@ class FileAnalyzer:
             'enums': []
         }
 
-    def analyze_file(self, file_path: Path):
+    def analyze_file(self, file_path: Path):  # Lê o conteúdo do arquivo `.hpp`, remove comentários /* */, e extrai classes, structs, métodos e enums
         self.reset()
-        self.current_file = file_path.stem
-        
+        self.current_file = file_path.stem    
         with open(file_path, 'r', encoding='utf-8') as f:
             content = f.read()
 
+        # Remover comentários
         content = re.sub(r'/\*.*?\*/', '', content, flags=re.DOTALL)
         self._extract_classes_and_structs(content)
-        self._extract_methods(content)  # Método atualizado
+        self._extract_methods(content)
         self._extract_enums(content)
 
-    def _extract_classes_and_structs(self, content: str):
+    def _extract_classes_and_structs(self, content: str): # Encontra e armazena todas as classes e structs do conteúdo analisado
         pattern = re.compile(
             r'(class|struct)\s+(\w+)\s*{([^}]*)};?',
             re.DOTALL
@@ -49,7 +49,7 @@ class FileAnalyzer:
                 self.current_data['structs'].append(name)
             self._extract_class_properties(body, name)
 
-    def _extract_class_properties(self, body: str, class_name: str):
+    def _extract_class_properties(self, body: str, class_name: str): # Encontra atributos/propriedades dentro do corpo da classe ou struct
         prop_pattern = re.compile(
             r'(\w+)\s+(\w+)\s*;'
         )
@@ -62,7 +62,7 @@ class FileAnalyzer:
                 'name': name
             })
 
-    def _extract_methods(self, content: str):
+    def _extract_methods(self, content: str): # Identifica todos os métodos com seus tipos de retorno e parâmetros
         # Nova regex aprimorada
         method_pattern = re.compile(
             r'(?:(?:static|const|inline|virtual)\s+)*'  # Captura modificadores
@@ -86,7 +86,7 @@ class FileAnalyzer:
                 'params': params
             })
 
-    def _extract_enums(self, content: str):
+    def _extract_enums(self, content: str): # Localiza enums com sufixo `_t` e lista seus valores
         enum_pattern = re.compile(
             r'enum\s+(\w+_t)\s*{([^}]*)}',
             re.DOTALL
@@ -99,7 +99,17 @@ class FileAnalyzer:
                 'values': [v.strip() for v in values.split(',') if v.strip()]
             })
 
-    def generate_markdown(self) -> str:
+    def generate_enum_markdown(self, enum: dict) -> str:
+        """Gera o markdown para cada enum com a lista de seus valores."""
+        md = f"# {enum['name']}\n\n"
+        md += "### Valores\n"
+        
+        for value in enum['values']:
+            md += f"- {value}\n"
+        
+        return md
+
+    def generate_markdown(self) -> str: # Gera uma string Markdown formatada com todas as informações coletadas
         md = f"# {self.current_file}\n\n"
         md += f"### Localização\n`{self.current_file}.hpp`\n\n"
         
@@ -129,7 +139,8 @@ class FileAnalyzer:
         
         return md
 
-def setup_directories():
+def setup_directories(): # Cria (se necessário) as pastas de input/output no diretório atual
+    print("iniciando verificacao de diretorios")
     current_dir = Path.cwd()
     input_dir = current_dir / 'input' / 'src'
     output_dir = current_dir / 'output' / 'src_new'
@@ -139,10 +150,15 @@ def setup_directories():
     
     return input_dir, output_dir
 
-def create_obsidian_notes():
+
+def create_obsidian_notes(): 
+    # Percorre todos os arquivos `.hpp` dentro de input/src, analisa e cria arquivos `.md` na pasta de saída
+    # formatados para uso no Obsidian
+    print("criando notas")
     input_dir, output_dir = setup_directories()
     analyzer = FileAnalyzer()
     
+    print("iniciando analise")
     for hpp_file in input_dir.rglob('*.hpp'):
         analyzer.analyze_file(hpp_file)
         
@@ -150,19 +166,33 @@ def create_obsidian_notes():
         output_path = output_dir / relative_path.with_suffix('.md')
         output_path.parent.mkdir(parents=True, exist_ok=True)
         
+        # Gera o markdown do arquivo atual
+        md_content = analyzer.generate_markdown()
+
+        # Adiciona links hierárquicos para as pastas
+        parent_links = []
+        for part in reversed(relative_path.parent.parts):
+            parent_links.append(f"[[{part}]]")
+        
+        if parent_links:
+            md_content += "### Hierarquia\n" + " ➔ ".join(reversed(parent_links)) + "\n"
+        
+        # Escreve o conteúdo principal no arquivo
         with open(output_path, 'w', encoding='utf-8') as md_file:
-            md_content = analyzer.generate_markdown()
-            
-            # Adicionar links hierárquicos
-            parent_links = []
-            for part in reversed(relative_path.parent.parts):
-                parent_links.append(f"[[{part}]]")
-            
-            if parent_links:
-                md_content += "### Hierarquia\n" + " ➔ ".join(reversed(parent_links)) + "\n"
-            
             md_file.write(md_content)
+        
+        # Cria também os arquivos individuais para cada enum
+        for enum in analyzer.current_data['enums']:
+            enum_md_content = analyzer.generate_enum_markdown(enum)
+            
+            # Cria o arquivo para o enum
+            enum_output_path = output_dir / f"{enum['name']}.md"
+            enum_output_path.parent.mkdir(parents=True, exist_ok=True)
+            
+            with open(enum_output_path, 'w', encoding='utf-8') as enum_file:
+                enum_file.write(enum_md_content)
+
 
 if __name__ == "__main__":
     create_obsidian_notes()
-    print("Documentação Obsidian gerada com sucesso!")
+    print("Documentacao Obsidian gerada com sucesso!")
