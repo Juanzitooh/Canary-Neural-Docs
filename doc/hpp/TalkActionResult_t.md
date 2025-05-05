@@ -1,0 +1,6 @@
+# TalkActionResult_t
+
+### Valores
+- TALKACTION_CONTINUE
+- TALKACTION_BREAK
+- TALKACTION_FAILED

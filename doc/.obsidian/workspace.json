@@ -1,0 +1,203 @@
+{
+  "main": {
+    "id": "fad15cc7f77e88f5",
+    "type": "split",
+    "children": [
+      {
+        "id": "1bd461f105807a87",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bc764847a8eed1b7",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Visualização em gráfico"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "57b320506e822cbe",
+    "type": "split",
+    "children": [
+      {
+        "id": "6f17183ae4068236",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1ab0aebc87d4f129",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "cd934e4e3023784f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "958f5a94ce7d0c67",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7c1d668d874109c6",
+    "type": "split",
+    "children": [
+      {
+        "id": "2f251ccb136b4bc6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "90f9386040baccde",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "099b670ece025de8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída"
+            }
+          },
+          {
+            "id": "f6609e0400123307",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "c3d1d68c5a97fd56",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "bc764847a8eed1b7",
+  "lastOpenFiles": [
+    "hpp/account/account.md",
+    "hpp/account/account_info.md",
+    "hpp/account/account_repository.md",
+    "hpp/account/account_repository_db.md",
+    "hpp/creatures/appearance/outfit/outfit.md",
+    "hpp/creatures/appearance/mounts/mounts.md",
+    "hpp/creatures/appearance/attached_effects/attached_effects.md",
+    "hpp/creatures/appearance/outfit",
+    "hpp/creatures/appearance/mounts",
+    "hpp/creatures/appearance/attached_effects",
+    "hpp/creatures/appearance",
+    "hpp/creatures/players/components/wheel/wheel_spells.md",
+    "hpp/creatures/players/components/wheel/wheel_gems.md",
+    "hpp/creatures/players/components/wheel/wheel_definitions.md",
+    "hpp/creatures/players/components/wheel/player_wheel.md",
+    "hpp/creatures/players/vocations/vocation.md",
+    "hpp/creatures/players/storages/storages.md",
+    "hpp/creatures/players/management/waitlist.md",
+    "hpp/creatures/players/management/ban.md",
+    "hpp/creatures/players/imbuements/imbuements.md",
+    "hpp/creatures/players/grouping/team_finder.md",
+    "hpp/creatures/players/grouping/party.md",
+    "hpp/creatures/players/grouping/guild.md",
+    "hpp/creatures/players/grouping/groups.md",
+    "hpp/creatures/players/grouping/familiars.md",
+    "hpp/creatures/players/components/wheel",
+    "hpp/creatures/players/components/player_vip.md",
+    "hpp/creatures/players/components/player_title.md",
+    "hpp/creatures/players/components/player_cyclopedia.md",
+    "hpp/creatures/players/components/player_badge.md",
+    "hpp/creatures/players/components/player_attached_effects.md",
+    "hpp/creatures/players/vocations",
+    "hpp/creatures/players/storages",
+    "hpp/creatures/players/management",
+    "hpp/creatures/players/imbuements",
+    "hpp/creatures/players/grouping"
+  ]
+}

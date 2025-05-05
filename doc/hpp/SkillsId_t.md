@@ -1,0 +1,6 @@
+# SkillsId_t
+
+### Valores
+- SKILLVALUE_LEVEL = 0
+- SKILLVALUE_TRIES = 1
+- SKILLVALUE_PERCENT = 2

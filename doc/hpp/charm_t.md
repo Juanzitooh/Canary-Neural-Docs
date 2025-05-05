@@ -1,0 +1,7 @@
+# charm_t
+
+### Valores
+- CHARM_UNDEFINED = 0
+- CHARM_OFFENSIVE = 1
+- CHARM_DEFENSIVE = 2
+- CHARM_PASSIVE = 3

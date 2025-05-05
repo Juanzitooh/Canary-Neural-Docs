@@ -1,0 +1,6 @@
+# RespawnPeriod_t
+
+### Valores
+- RESPAWNPERIOD_ALL
+- RESPAWNPERIOD_DAY
+- RESPAWNPERIOD_NIGHT

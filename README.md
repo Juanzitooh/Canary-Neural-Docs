@@ -60,7 +60,7 @@ cd canary-docs
 # Cole seus arquivos .hpp em:
 cp -R seus-arquivos/ source/src/
 
-python canary_analyzer.py
+python generate_docs.py
 ```
 
 ## Estrutura de Pastas

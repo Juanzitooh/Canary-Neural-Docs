@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Script para gerar documentação Obsidian para a API Lua do Canary
 seguindo a estrutura hierárquica baseada nos caminhos de inclusão
@@ -10,7 +9,7 @@ import glob
 from pathlib import Path
 
 # Configurações
-IMPUT_DIR = "source"  # Diretório com os arquivos de código fonte
+INPUT_DIR = "source"  # Diretório com os arquivos de código fonte
 OUTPUT_DIR = "doc"  # Diretório base de saída
 
 def ensure_dir(directory):
@@ -191,7 +190,7 @@ def main():
     print("Gerando documentação Obsidian para a API Lua do Canary...")
     
     # Encontrar todos os pares de arquivos .hpp e .cpp
-    hpp_files = glob.glob(f"{IMPUT_DIR}/*_functions.hpp")
+    hpp_files = glob.glob(f"{INPUT_DIR}/**/*_functions.hpp", recursive=True)
     
     for hpp_file in hpp_files:
         cpp_file = hpp_file.replace(".hpp", ".cpp")

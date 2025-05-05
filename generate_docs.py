@@ -142,8 +142,8 @@ class FileAnalyzer: # Inicializa a estrutura dos dados que estão sendo analizad
 def setup_directories(): # Cria (se necessário) as pastas de input/output no diretório atual
     print("iniciando verificacao de diretorios")
     current_dir = Path.cwd()
-    input_dir = current_dir / 'input' / 'src'
-    output_dir = current_dir / 'output' / 'src_new'
+    input_dir = current_dir / 'source' / 'src'
+    output_dir = current_dir / 'doc' / 'hpp'
     
     input_dir.mkdir(parents=True, exist_ok=True)
     output_dir.mkdir(parents=True, exist_ok=True)
@@ -152,7 +152,7 @@ def setup_directories(): # Cria (se necessário) as pastas de input/output no di
 
 
 def create_obsidian_notes(): 
-    # Percorre todos os arquivos `.hpp` dentro de input/src, analisa e cria arquivos `.md` na pasta de saída
+    # Percorre todos os arquivos `.hpp` dentro de source/src, analisa e cria arquivos `.md` na pasta de saída
     # formatados para uso no Obsidian
     print("criando notas")
     input_dir, output_dir = setup_directories()

@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 """
 Script para gerar documentação Obsidian para a API Lua do Canary
 """
@@ -10,7 +9,7 @@ import shutil
 from pathlib import Path
 
 # Configurações
-IMPUT_DIR = "source"  # Diretório com os arquivos de código fonte
+INPUT_DIR = "source/src/lua/functions"  # Diretório com os arquivos de código fonte
 OUTPUT_DIR = "doc"      # Diretório de saída para os arquivos Obsidian
 CLASSES_DIR = f"{OUTPUT_DIR}/Classes"
 METHODS_DIR = f"{OUTPUT_DIR}/Métodos"
@@ -223,7 +222,7 @@ def main():
     ensure_dirs()
     
     # Encontrar todos os pares de arquivos .hpp e .cpp
-    hpp_files = glob.glob(f"{IMPUT_DIR}/*_functions.hpp")
+    hpp_files = glob.glob(f"{INPUT_DIR}/**/*_functions.hpp", recursive=True)
     
     classes_processed = []
     

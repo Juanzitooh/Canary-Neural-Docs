@@ -1,0 +1,6 @@
+# WorldType_t
+
+### Valores
+- WORLD_TYPE_NO_PVP = 1
+- WORLD_TYPE_PVP = 2
+- WORLD_TYPE_PVP_ENFORCED = 3
