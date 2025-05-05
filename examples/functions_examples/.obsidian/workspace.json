@@ -1,0 +1,243 @@
+{
+  "main": {
+    "id": "23d4aafc8388b90c",
+    "type": "split",
+    "children": [
+      {
+        "id": "d92120dac31167cb",
+        "type": "tabs",
+        "dimension": 23.85786802030457,
+        "children": [
+          {
+            "id": "4795374aef3a21ab",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/lua/functions/events/action_functions/action_functions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "action_functions"
+            }
+          },
+          {
+            "id": "0bf30b568a30c972",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/lua/functions/creatures/player/player/player.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "player"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "e983851b9db75385",
+        "type": "tabs",
+        "dimension": 76.14213197969542,
+        "children": [
+          {
+            "id": "922885048458be98",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "graph",
+              "state": {},
+              "pinned": true,
+              "icon": "lucide-git-fork",
+              "title": "Visualização em gráfico"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8dc095898dae5b09",
+    "type": "split",
+    "children": [
+      {
+        "id": "0327cfae2c9ce9f9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "80dbd4353af27afe",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "37a5c667eac7f07f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "bc77414b910887f9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "29aa81565524cb51",
+    "type": "split",
+    "children": [
+      {
+        "id": "d3f72b2ee1f6098b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b47cfaa357e62300",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "eba41ad480ec3de8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída"
+            }
+          },
+          {
+            "id": "a209eb7981330623",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "8ff29a7688bfc284",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "graph:Abrir visualização em gráfico": false
+    }
+  },
+  "active": "922885048458be98",
+  "lastOpenFiles": [
+    "src/lua/functions/creatures/player/player/player.md",
+    "src/src.md",
+    "src/lua/functions/events/talk_action/talk_action.md",
+    "src/lua/functions/events/talk_action",
+    "src/lua/functions/creatures/combat/spell/spell.md",
+    "src/lua/functions/creatures/combat/spell",
+    "src/lua/functions/creatures/npc/shop/shop.md",
+    "src/lua/functions/creatures/npc/npc_type/npc_type.md",
+    "src/lua/functions/creatures/npc/npc/npc.md",
+    "src/lua/functions/creatures/npc/shop",
+    "src/lua/functions/creatures/npc/npc_type",
+    "src/lua/functions/creatures/npc/npc.md",
+    "src/lua/functions/creatures/npc/npc",
+    "src/lua/functions/creatures/npc",
+    "src/lua/functions/core/libs/result/result.md",
+    "src/lua/functions/core/libs/result",
+    "src/lua/functions/core/game/zone/zone.md",
+    "src/lua/functions/core/game/zone",
+    "src/lua/functions/core/network/webhook/webhook.md",
+    "src/lua/functions/core/network/webhook",
+    "src/lua/functions/items/weapon/weapon.md",
+    "src/lua/functions/items/weapon",
+    "src/lua/functions/creatures/player/vocation/vocation.md",
+    "src/lua/functions/creatures/player/party/party.md",
+    "src/lua/functions/creatures/player/mount/mount.md",
+    "src/lua/functions/creatures/player/guild/guild.md",
+    "src/lua/functions/creatures/player/group/group.md",
+    "src/lua/functions/creatures/player/player.md",
+    "src/lua/functions/creatures/combat/variant/variant.md",
+    "src/lua/functions/map/town/town.md",
+    "src/lua/functions/map/position/position.md",
+    "src/lua/functions/map/tile/tile.md",
+    "src/lua/functions/map/teleport/teleport.md",
+    "src/lua/functions/map/house/house.md",
+    "src/lua/functions/map/map.md",
+    "src/lua/functions/core/game/game/game.md",
+    "Sem título.canvas"
+  ]
+}

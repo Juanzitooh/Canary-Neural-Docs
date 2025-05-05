@@ -1,0 +1,32 @@
+---
+class:
+  - "[[house]]"
+tags:
+  - canEditAccessList
+  - create
+  - getAccessList
+  - getBedCount
+  - getBeds
+  - getDoorCount
+  - getDoorIdByPosition
+  - getDoors
+  - getExitPosition
+  - getId
+  - getItems
+  - getName
+  - getOwnerGuid
+  - getPrice
+  - getRent
+  - getTileCount
+  - getTiles
+  - getTown
+  - hasItemOnTile
+  - hasNewOwnership
+  - isInvited
+  - kickPlayer
+  - setAccessList
+  - setHouseOwner
+  - setNewOwnerGuid
+  - startTrade
+dependence: "[[map]]"
+---

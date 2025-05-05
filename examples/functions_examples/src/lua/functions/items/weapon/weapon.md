@@ -1,0 +1,38 @@
+---
+class:
+  - "[[weapon]]"
+tags:
+  - action
+  - ammoType
+  - attack
+  - breakChance
+  - charges
+  - constructor
+  - damage
+  - decayTo
+  - defense
+  - duration
+  - element
+  - extraElement
+  - health
+  - healthPercent
+  - hitChance
+  - id
+  - level
+  - magicLevel
+  - mana
+  - manaPercent
+  - maxHitChance
+  - onUseWeapon
+  - premium
+  - range
+  - register
+  - shootType
+  - slotType
+  - soul
+  - transformDeEquipTo
+  - transformEquipTo
+  - vocation
+  - wieldUnproperly
+dependence: "[[items]]"
+---

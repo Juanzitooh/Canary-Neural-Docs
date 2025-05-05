@@ -10,7 +10,7 @@ import shutil
 from pathlib import Path
 
 # Configurações
-SOURCE_DIR = "source"  # Diretório com os arquivos de código fonte
+IMPUT_DIR = "source"  # Diretório com os arquivos de código fonte
 OUTPUT_DIR = "doc"      # Diretório de saída para os arquivos Obsidian
 CLASSES_DIR = f"{OUTPUT_DIR}/Classes"
 METHODS_DIR = f"{OUTPUT_DIR}/Métodos"
@@ -223,7 +223,7 @@ def main():
     ensure_dirs()
     
     # Encontrar todos os pares de arquivos .hpp e .cpp
-    hpp_files = glob.glob(f"{SOURCE_DIR}/*_functions.hpp")
+    hpp_files = glob.glob(f"{IMPUT_DIR}/*_functions.hpp")
     
     classes_processed = []
     

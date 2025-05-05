@@ -1,0 +1,61 @@
+---
+class:
+  - "[[item]]"
+tags:
+  - actor
+  - canBeMoved
+  - canReceiveAutoCarpet
+  - clone
+  - create
+  - decay
+  - getActionId
+  - getArticle
+  - getAttribute
+  - getCharges
+  - getClassification
+  - getContainer
+  - getCount
+  - getCustomAttribute
+  - getDescription
+  - getFluidType
+  - getId
+  - getImbuement
+  - getImbuementSlot
+  - getName
+  - getOwnerId
+  - getOwnerName
+  - getParent
+  - getPluralName
+  - getPosition
+  - getShader
+  - getSubType
+  - getTier
+  - getTile
+  - getTopParent
+  - getUniqueId
+  - getWeight
+  - hasAttribute
+  - hasOwner
+  - hasProperty
+  - hasShader
+  - isContainer
+  - isInsideDepot
+  - isItem
+  - isOwner
+  - moveTo
+  - moveToSlot
+  - remove
+  - removeAttribute
+  - removeCustomAttribute
+  - serializeAttributes
+  - setActionId
+  - setAttribute
+  - setCustomAttribute
+  - setDuration
+  - setOwner
+  - setShader
+  - setTier
+  - split
+  - transform
+dependence: "[[items]]"
+---

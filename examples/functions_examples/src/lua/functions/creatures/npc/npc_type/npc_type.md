@@ -1,0 +1,38 @@
+---
+class:
+  - "[[npc_type]]"
+tags:
+  - addShopItem
+  - addSound
+  - addVoice
+  - baseSpeed
+  - canPushCreatures
+  - canPushItems
+  - canSpawn
+  - constructor
+  - currency
+  - eventType
+  - floorChange
+  - getCreatureEvents
+  - getSounds
+  - getVoices
+  - health
+  - isPushable
+  - light
+  - maxHealth
+  - name
+  - nameDescription
+  - onThink
+  - outfit
+  - registerEvent
+  - respawnTypeIsUnderground
+  - respawnTypePeriod
+  - soundChance
+  - soundSpeedTicks
+  - speechBubble
+  - walkInterval
+  - walkRadius
+  - yellChance
+  - yellSpeedTicks
+dependence: "[[npc]]"
+---

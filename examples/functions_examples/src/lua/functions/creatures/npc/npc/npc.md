@@ -1,0 +1,34 @@
+---
+class:
+  - "[[npc]]"
+tags:
+  - closeShopWindow
+  - create
+  - follow
+  - getCurrency
+  - getDistanceTo
+  - getId
+  - getName
+  - getShopItem
+  - getSpeechBubble
+  - isInTalkRange
+  - isInteractingWithPlayer
+  - isMerchant
+  - isNpc
+  - isPlayerInteractingOnTopic
+  - move
+  - openShopWindow
+  - openShopWindowTable
+  - place
+  - removePlayerInteraction
+  - say
+  - sellItem
+  - setCurrency
+  - setMasterPos
+  - setName
+  - setPlayerInteraction
+  - setSpeechBubble
+  - turn
+  - turnToCreature
+dependence: "[[npc]]"
+---

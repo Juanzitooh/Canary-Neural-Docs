@@ -1,0 +1,60 @@
+---
+class:
+  - "[[item_type]]"
+tags:
+  - getAmmoType
+  - getArmor
+  - getArticle
+  - getAttack
+  - getBaseSpeed
+  - getCapacity
+  - getCharges
+  - getDecayId
+  - getDecayTime
+  - getDefense
+  - getDescription
+  - getDestroyId
+  - getElementDamage
+  - getElementType
+  - getExtraDefense
+  - getFluidSource
+  - getHitChance
+  - getId
+  - getImbuementSlot
+  - getName
+  - getPluralName
+  - getRequiredLevel
+  - getShootRange
+  - getShowDuration
+  - getSlotPosition
+  - getSpeed
+  - getStackSize
+  - getTransformDeEquipId
+  - getTransformEquipId
+  - getType
+  - getVocationString
+  - getWeaponType
+  - getWeight
+  - getWrapableTo
+  - hasSubType
+  - isBlocking
+  - isContainer
+  - isCorpse
+  - isDoor
+  - isFluidContainer
+  - isGroundTile
+  - isKey
+  - isMagicField
+  - isMovable
+  - isMultiUse
+  - isPickupable
+  - isPodium
+  - isQuiver
+  - isReadable
+  - isRune
+  - isStackable
+  - isStowable
+  - isWritable
+  - itemTypeCreate
+dependence: "[[items]]"
+---

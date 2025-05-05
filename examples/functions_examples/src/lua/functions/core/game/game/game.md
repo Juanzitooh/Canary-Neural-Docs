@@ -1,0 +1,64 @@
+---
+class:
+  - "[[game]]"
+tags:
+  - addInfluencedMonster
+  - createBestiaryCharm
+  - createContainer
+  - createItem
+  - createItemClassification
+  - createMonster
+  - createMonsterType
+  - createNpc
+  - createNpcType
+  - createSoulPitMonster
+  - createTile
+  - generateNpc
+  - getAchievementInfoById
+  - getAchievementInfoByName
+  - getAchievements
+  - getBestiaryCharm
+  - getBestiaryList
+  - getBoostedBoss
+  - getBoostedCreature
+  - getClientVersion
+  - getDummies
+  - getEventCallbacks
+  - getExperienceForLevel
+  - getFiendishMonsters
+  - getGameState
+  - getHouses
+  - getInfluencedMonsters
+  - getLadderIds
+  - getMonsterCount
+  - getMonsterTypes
+  - getMonstersByBestiaryStars
+  - getMonstersByRace
+  - getNormalizedGuildName
+  - getNormalizedPlayerName
+  - getNpcCount
+  - getOfflinePlayer
+  - getPlayerCount
+  - getPlayers
+  - getPublicAchievements
+  - getReturnMessage
+  - getSecretAchievements
+  - getSoulCoreItems
+  - getSpectators
+  - getTalkActions
+  - getTowns
+  - getWorldType
+  - hasDistanceEffect
+  - hasEffect
+  - loadMap
+  - loadMapChunk
+  - makeFiendishMonster
+  - registerAchievement
+  - reload
+  - removeFiendishMonster
+  - removeInfluencedMonster
+  - setGameState
+  - setWorldType
+  - startRaid
+dependence: "[[game]]"
+---

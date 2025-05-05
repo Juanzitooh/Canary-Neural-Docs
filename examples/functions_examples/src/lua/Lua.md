@@ -1,0 +1,5 @@
+---
+class: 
+tags: 
+dependence: "[[src]]"
+---

@@ -1,0 +1,37 @@
+---
+class:
+  - "[[tile]]"
+tags:
+  - addItem
+  - addItemEx
+  - create
+  - getBottomCreature
+  - getBottomVisibleCreature
+  - getCreatureCount
+  - getCreatures
+  - getDownItemCount
+  - getFieldItem
+  - getGround
+  - getHouse
+  - getItemById
+  - getItemByTopOrder
+  - getItemByType
+  - getItemCount
+  - getItemCountById
+  - getItems
+  - getPosition
+  - getThing
+  - getThingCount
+  - getThingIndex
+  - getTopCreature
+  - getTopDownItem
+  - getTopItemCount
+  - getTopTopItem
+  - getTopVisibleCreature
+  - getTopVisibleThing
+  - hasFlag
+  - hasProperty
+  - queryAdd
+  - sweep
+dependence: "[[map]]"
+---

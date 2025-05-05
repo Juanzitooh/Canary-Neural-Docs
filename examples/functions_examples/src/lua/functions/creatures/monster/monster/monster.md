@@ -1,0 +1,57 @@
+---
+class:
+  - "[[monster]]"
+tags:
+  - addAttackSpell
+  - addDefense
+  - addDefenseSpell
+  - addFriend
+  - addReflectElement
+  - addTarget
+  - changeTargetDistance
+  - clearFiendishStatus
+  - configureForgeSystem
+  - create
+  - criticalChance
+  - criticalDamage
+  - getDefense
+  - getForgeStack
+  - getFriendCount
+  - getFriendList
+  - getMonsterForgeClassification
+  - getName
+  - getRespawnType
+  - getSpawnPosition
+  - getTargetCount
+  - getTargetList
+  - getTimeToChangeFiendish
+  - getType
+  - hazard
+  - hazardCrit
+  - hazardDamageBoost
+  - hazardDefenseBoost
+  - hazardDodge
+  - immune
+  - isChallenged
+  - isDead
+  - isForgeable
+  - isFriend
+  - isIdle
+  - isInSpawnRange
+  - isMonster
+  - isOpponent
+  - isTarget
+  - removeFriend
+  - removeTarget
+  - searchTarget
+  - selectTarget
+  - setForgeStack
+  - setIdle
+  - setMonsterForgeClassification
+  - setName
+  - setSpawnPosition
+  - setTimeToChangeFiendish
+  - setType
+  - soulPit
+dependence: "[[monster]]"
+---

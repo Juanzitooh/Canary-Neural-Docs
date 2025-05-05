@@ -10,8 +10,8 @@ import glob
 from pathlib import Path
 
 # Configurações
-SOURCE_DIR = "functions_examples"  # Diretório com os arquivos de código fonte
-OUTPUT_BASE_DIR = "functions_examples/src/lua/functions"  # Diretório base de saída
+IMPUT_DIR = "source"  # Diretório com os arquivos de código fonte
+OUTPUT_DIR = "doc"  # Diretório base de saída
 
 def ensure_dir(directory):
     """Cria um diretório se ele não existir"""
@@ -94,7 +94,7 @@ def create_hierarchy(include_path):
     path_parts = include_path.replace("lua/functions/", "").replace("_functions.hpp", "").split("/")
     
     # Criar a hierarquia de diretórios
-    current_dir = OUTPUT_BASE_DIR
+    current_dir = OUTPUT_DIR
     parent = None
     
     for i, part in enumerate(path_parts[:-1]):  # Excluir o último elemento (nome do arquivo)
@@ -191,7 +191,7 @@ def main():
     print("Gerando documentação Obsidian para a API Lua do Canary...")
     
     # Encontrar todos os pares de arquivos .hpp e .cpp
-    hpp_files = glob.glob(f"{SOURCE_DIR}/*_functions.hpp")
+    hpp_files = glob.glob(f"{IMPUT_DIR}/*_functions.hpp")
     
     for hpp_file in hpp_files:
         cpp_file = hpp_file.replace(".hpp", ".cpp")

@@ -29,6 +29,11 @@ Olá! Sou **Habdel Edenfield** ([GitHub](https://github.com/Habdel-Edenfield) | 
   - Detecção de métodos com parâmetros e tipos de retorno
   - Mapeamento hierárquico de diretórios
 
+- **Suporte a ler funções de blind lua c++**
+  - ?
+  - ?
+  - ?
+
 - **Integração com Obsidian**
   - Links bidirecionais entre componentes
   - Visualização neural das relações internas
@@ -53,18 +58,18 @@ git clone https://github.com/Habdel-Edenfield/canary-docs.git
 cd canary-docs
 
 # Cole seus arquivos .hpp em:
-cp -R seus-arquivos/ input/src/
+cp -R seus-arquivos/ source/src/
 
 python canary_analyzer.py
 ```
 
 ## Estrutura de Pastas
 ```bash
-📁 input/
+📁 source/
 └── 📁 src/
     └── ... (documentação original canary)
-📁 output/
-└── 📁 src_new/
+📁 doc/
+└── 📁 hpp/
     ├── account.md
     ├── player.md
     └── ... (documentação gerada)

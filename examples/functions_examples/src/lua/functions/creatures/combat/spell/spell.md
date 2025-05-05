@@ -1,0 +1,44 @@
+---
+class:
+  - "[[spell]]"
+tags:
+  - allowFarUse
+  - allowOnSelf
+  - blockWalls
+  - castSound
+  - charges
+  - checkFloor
+  - cooldown
+  - create
+  - group
+  - groupCooldown
+  - hasParams
+  - hasPlayerNameParam
+  - id
+  - impactSound
+  - isAggressive
+  - isBlocking
+  - isBlockingWalls
+  - isEnabled
+  - isPremium
+  - isSelfTarget
+  - level
+  - magicLevel
+  - mana
+  - manaPercent
+  - name
+  - needCasterTargetOrDirection
+  - needDirection
+  - needLearn
+  - needTarget
+  - needWeapon
+  - onCastSpell
+  - range
+  - register
+  - runeId
+  - setPzLocked
+  - soul
+  - vocation
+  - words
+dependence: "[[combat]]"
+---

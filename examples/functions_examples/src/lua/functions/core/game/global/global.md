@@ -1,0 +1,39 @@
+---
+class:
+  - "[[global]]"
+tags:
+  - addEvent
+  - cleanMap
+  - constructor
+  - debugPrint
+  - doAddContainerItem
+  - doAreaCombatCondition
+  - doAreaCombatDispel
+  - doAreaCombatHealth
+  - doAreaCombatMana
+  - doChallengeCreature
+  - doPlayerAddItem
+  - doTargetCombatCondition
+  - doTargetCombatDispel
+  - doTargetCombatHealth
+  - doTargetCombatMana
+  - getDepotId
+  - getFormattedTimeRemaining
+  - getWaypointPositionByName
+  - getWorldLight
+  - getWorldTime
+  - getWorldUpTime
+  - isDepot
+  - isInWar
+  - isMovable
+  - isType
+  - isValidUID
+  - rawGetMetatable
+  - reportError
+  - saveServer
+  - sendChannelMessage
+  - sendGuildChannelMessage
+  - stopEvent
+  - systemTime
+dependence: "[[game]]"
+---
