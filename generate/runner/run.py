@@ -1,7 +1,8 @@
 #generate/runner/run.py
 
-from ..analyser.hpp_analyser import FileAnalyzer
 from ..io.setup import setup_directories
+from ..analyser.core import FileAnalyzer
+from ..analyser.markdown_generator import generate_enum_markdown, generate_markdown
 
 def create_obsidian_notes(): 
     # Percorre todos os arquivos `.hpp` dentro de source/src, analisa e cria arquivos `.md` na pasta de saída
@@ -19,7 +20,8 @@ def create_obsidian_notes():
         output_path.parent.mkdir(parents=True, exist_ok=True)
         
         # Gera o markdown do arquivo atual
-        md_content = analyzer.generate_markdown()
+        file_name = hpp_file.stem  # sem extensão
+        md_content = generate_markdown(file_name, analyzer.current_data)
 
         # Adiciona links hierárquicos para as pastas
         parent_links = []
@@ -35,7 +37,7 @@ def create_obsidian_notes():
         
         # Cria também os arquivos individuais para cada enum
         for enum in analyzer.current_data['enums']:
-            enum_md_content = analyzer.generate_enum_markdown(enum)
+            enum_md_content = generate_enum_markdown(enum)
             
             # Cria o arquivo para o enum
             enum_output_path = output_dir / f"{enum['name']}.md"

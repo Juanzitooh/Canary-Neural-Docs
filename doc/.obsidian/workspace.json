@@ -170,11 +170,6 @@
     "hpp/creatures/appearance/mounts",
     "hpp/creatures/appearance/attached_effects",
     "hpp/creatures/appearance",
-    "hpp/creatures/npcs/spawns/spawn_npc.md",
-    "hpp/creatures/npcs/spawns",
-    "hpp/creatures/npcs/npcs.md",
-    "hpp/creatures/npcs/npc.md",
-    "hpp/creatures/npcs",
     "hpp/creatures/players/components/wheel/wheel_spells.md",
     "hpp/creatures/players/components/wheel/wheel_gems.md",
     "hpp/creatures/players/components/wheel/wheel_definitions.md",
@@ -196,8 +191,13 @@
     "hpp/creatures/players/components/player_badge.md",
     "hpp/creatures/players/components/player_attached_effects.md",
     "hpp/creatures/players/components/player_achievement.md",
+    "hpp/creatures/players/animus_mastery/animus_mastery.md",
     "hpp/creatures/players/vocations",
     "hpp/creatures/players/storages",
-    "hpp/creatures/players/management"
+    "hpp/creatures/players/player.md",
+    "hpp/creatures/players/management",
+    "hpp/creatures/players/imbuements",
+    "hpp/creatures/players/highscore_category.md",
+    "hpp/creatures/players/grouping"
   ]
 }

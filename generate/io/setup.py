@@ -1,3 +1,4 @@
+#generate/io/setup.py
 from pathlib import Path
 
 def setup_directories():  # Cria (se necessário) as pastas de input/output dois níveis acima do diretório atual
