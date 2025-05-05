@@ -11,10 +11,14 @@
             "id": "bc764847a8eed1b7",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Visualização em gráfico"
+              "type": "markdown",
+              "state": {
+                "file": "hpp/io/fileloader.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "fileloader"
             }
           }
         ]
@@ -161,8 +165,17 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "1ab0aebc87d4f129",
+  "active": "bc764847a8eed1b7",
   "lastOpenFiles": [
+    "hpp/pch.md",
+    "hpp/ConditionAttr_t.md",
+    "hpp/CombatParam_t.md",
+    "hpp/charm_t.md",
+    "hpp/canary_server.md",
+    "hpp/CallBackParam_t.md",
+    "hpp/buffs_t.md",
+    "hpp/AttrTypes_t.md",
+    "hpp/AccessList_t.md",
     "hpp/creatures/appearance/outfit/outfit.md",
     "hpp/creatures/appearance/mounts/mounts.md",
     "hpp/creatures/appearance/attached_effects/attached_effects.md",
@@ -185,19 +198,10 @@
     "hpp/creatures/players/grouping/groups.md",
     "hpp/creatures/players/grouping/familiars.md",
     "hpp/creatures/players/components/wheel",
-    "hpp/creatures/players/components/player_vip.md",
-    "hpp/creatures/players/components/player_title.md",
-    "hpp/creatures/players/components/player_cyclopedia.md",
-    "hpp/creatures/players/components/player_badge.md",
-    "hpp/creatures/players/components/player_attached_effects.md",
-    "hpp/creatures/players/components/player_achievement.md",
-    "hpp/creatures/players/animus_mastery/animus_mastery.md",
     "hpp/creatures/players/vocations",
     "hpp/creatures/players/storages",
-    "hpp/creatures/players/player.md",
     "hpp/creatures/players/management",
     "hpp/creatures/players/imbuements",
-    "hpp/creatures/players/highscore_category.md",
     "hpp/creatures/players/grouping"
   ]
 }
