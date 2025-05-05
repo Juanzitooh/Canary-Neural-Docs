@@ -161,12 +161,8 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "bc764847a8eed1b7",
+  "active": "1ab0aebc87d4f129",
   "lastOpenFiles": [
-    "hpp/account/account.md",
-    "hpp/account/account_info.md",
-    "hpp/account/account_repository.md",
-    "hpp/account/account_repository_db.md",
     "hpp/creatures/appearance/outfit/outfit.md",
     "hpp/creatures/appearance/mounts/mounts.md",
     "hpp/creatures/appearance/attached_effects/attached_effects.md",
@@ -174,6 +170,11 @@
     "hpp/creatures/appearance/mounts",
     "hpp/creatures/appearance/attached_effects",
     "hpp/creatures/appearance",
+    "hpp/creatures/npcs/spawns/spawn_npc.md",
+    "hpp/creatures/npcs/spawns",
+    "hpp/creatures/npcs/npcs.md",
+    "hpp/creatures/npcs/npc.md",
+    "hpp/creatures/npcs",
     "hpp/creatures/players/components/wheel/wheel_spells.md",
     "hpp/creatures/players/components/wheel/wheel_gems.md",
     "hpp/creatures/players/components/wheel/wheel_definitions.md",
@@ -194,10 +195,9 @@
     "hpp/creatures/players/components/player_cyclopedia.md",
     "hpp/creatures/players/components/player_badge.md",
     "hpp/creatures/players/components/player_attached_effects.md",
+    "hpp/creatures/players/components/player_achievement.md",
     "hpp/creatures/players/vocations",
     "hpp/creatures/players/storages",
-    "hpp/creatures/players/management",
-    "hpp/creatures/players/imbuements",
-    "hpp/creatures/players/grouping"
+    "hpp/creatures/players/management"
   ]
 }

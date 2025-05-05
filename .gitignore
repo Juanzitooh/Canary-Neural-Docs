@@ -1,0 +1,55 @@
+# Bytecode do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambiente virtual (se você usa venv)
+.env/
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Arquivos de log e dump
+*.log
+*.out
+*.err
+
+# Configuração de IDEs/editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos temporários de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Arquivos de build/distribuição
+build/
+dist/
+*.egg-info/
+.eggs/
+*.manifest
+*.spec
+
+# Testes (pytest, coverage, etc.)
+.cache/
+.tox/
+coverage.xml
+htmlcov/
+.pytest_cache/
+
+# Configs pessoais
+*.swp
+*.bak
+
+# Arquivos gerados do projeto (opcional)
+doc/
+source/
+
+# Arquivos JSON temporários ou cache (caso use)
+*.json.tmp

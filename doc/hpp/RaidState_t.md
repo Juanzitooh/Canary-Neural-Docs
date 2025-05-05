@@ -1,5 +1,0 @@
-# RaidState_t
-
-### Valores
-- RAIDSTATE_IDLE
-- RAIDSTATE_EXECUTING

@@ -1,8 +1,0 @@
-# WieldInfo_t
-
-### Valores
-- WIELDINFO_NONE = 0
-- WIELDINFO_LEVEL = 1 << 0
-- WIELDINFO_MAGLV = 1 << 1
-- WIELDINFO_VOCREQ = 1 << 2
-- WIELDINFO_PREMIUM = 1 << 3
