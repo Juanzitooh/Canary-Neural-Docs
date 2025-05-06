@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "1bd461f105807a87",
+        "id": "3373dc22ab9b5925",
         "type": "tabs",
         "children": [
           {
-            "id": "bc764847a8eed1b7",
+            "id": "877c7d26f82d406c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "hpp/io/fileloader.md",
+                "file": "readme (leia-me).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "fileloader"
+              "title": "readme (leia-me)"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "const",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -165,43 +165,43 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "bc764847a8eed1b7",
+  "active": "877c7d26f82d406c",
   "lastOpenFiles": [
-    "hpp/pch.md",
-    "hpp/ConditionAttr_t.md",
-    "hpp/CombatParam_t.md",
-    "hpp/charm_t.md",
-    "hpp/canary_server.md",
-    "hpp/CallBackParam_t.md",
-    "hpp/buffs_t.md",
-    "hpp/AttrTypes_t.md",
-    "hpp/AccessList_t.md",
-    "hpp/creatures/appearance/outfit/outfit.md",
-    "hpp/creatures/appearance/mounts/mounts.md",
-    "hpp/creatures/appearance/attached_effects/attached_effects.md",
-    "hpp/creatures/appearance/outfit",
-    "hpp/creatures/appearance/mounts",
-    "hpp/creatures/appearance/attached_effects",
-    "hpp/creatures/appearance",
-    "hpp/creatures/players/components/wheel/wheel_spells.md",
-    "hpp/creatures/players/components/wheel/wheel_gems.md",
-    "hpp/creatures/players/components/wheel/wheel_definitions.md",
-    "hpp/creatures/players/components/wheel/player_wheel.md",
-    "hpp/creatures/players/vocations/vocation.md",
-    "hpp/creatures/players/storages/storages.md",
-    "hpp/creatures/players/management/waitlist.md",
-    "hpp/creatures/players/management/ban.md",
-    "hpp/creatures/players/imbuements/imbuements.md",
-    "hpp/creatures/players/grouping/team_finder.md",
-    "hpp/creatures/players/grouping/party.md",
-    "hpp/creatures/players/grouping/guild.md",
-    "hpp/creatures/players/grouping/groups.md",
-    "hpp/creatures/players/grouping/familiars.md",
-    "hpp/creatures/players/components/wheel",
-    "hpp/creatures/players/vocations",
-    "hpp/creatures/players/storages",
-    "hpp/creatures/players/management",
-    "hpp/creatures/players/imbuements",
-    "hpp/creatures/players/grouping"
+    "wiki_canary.md",
+    "Enums/MagicEffectClasses.md",
+    "canary_server/creatures/combat/combat.md",
+    "canary_server/enums/enums_Index.md",
+    "canary_server/enums/player_cyclopedia.md",
+    "canary_server/items/items_definitions.md",
+    "canary_server/core.md",
+    "readme (leia-me).md",
+    "Enums/WheelSpellBoost_t.md",
+    "Enums/WheelSpellGrade_t.md",
+    "Enums/WheelAvatarSkill_t.md",
+    "Enums/WheelInstant_t.md",
+    "Enums/WheelMajor_t.md",
+    "Enums/WheelStat_t.md",
+    "Enums/WheelOnThink_t.md",
+    "Enums/WheelStage_t.md",
+    "Enums/WheelStagePointsEnum_t.md",
+    "Enums/WheelStageEnum_t.md",
+    "Enums/WheelSlots_t.md",
+    "Enums/SharedExpStatus_t.md",
+    "canary_server/creatures/players/components/wheel/wheel_spells.md",
+    "canary_server/creatures/players/components/wheel/wheel_Index.md",
+    "canary_server/creatures/players/components/wheel/wheel_gems.md",
+    "canary_server/creatures/players/components/wheel/wheel_definitions.md",
+    "canary_server/creatures/players/components/wheel/player_wheel.md",
+    "canary_server/creatures/players/animus_mastery/animus_mastery_Index.md",
+    "canary_server/creatures/players/components/wheel",
+    "canary_server/creatures/players/animus_mastery",
+    "canary_server/creatures/players/grouping",
+    "canary_server/creatures/players/vocations",
+    "canary_server/creatures/players/storages",
+    "canary_server/creatures/players/management",
+    "canary_server/creatures/players/imbuements",
+    "canary_server/creatures/players/components",
+    "canary_server/creatures/players",
+    "canary_server/creatures/npcs/spawns"
   ]
 }

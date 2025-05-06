@@ -1,11 +1,54 @@
+#generate/runner/help.py
+
+from pathlib import Path
+
 def generate_hierarchy_links(relative_path):
-    """Gera os links hierárquicos para as pastas, como no formato Obsidian."""
-    parent_links = []
-    for part in reversed(relative_path.parent.parts):
-        parent_links.append(f"[[{part}]]")
-    return parent_links
+    """
+    Retorna uma lista de tuplas [(folder_name, full_path_to_index_file)], 
+    da pasta mais próxima até a raiz.
+    """
+    hierarchy = []
+    parts = list(relative_path.parts)[:-1]  # remove o próprio arquivo
+
+    current_path = Path()
+    for part in parts:
+        current_path = current_path / part
+        hierarchy.append((part, current_path))
+    return hierarchy
 
 def create_markdown_file(output_path, content):
     """Cria e escreve um arquivo `.md` com o conteúdo fornecido."""
     with open(output_path, 'w', encoding='utf-8') as md_file:
         md_file.write(content)
+
+def update_wiki_canary_index(index_list, wiki_path):
+    """
+    Atualiza o arquivo wiki_canary.md substituindo o conteúdo entre os marcadores
+    '**Índice da estrutura do canary' e '*fim indice*' por uma lista formatada dos índices.
+    """
+    with open(wiki_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    start_marker = "**Índice da estrutura do canary"
+    end_marker = "*fim indice*"
+
+    start_index = content.find(start_marker)
+    end_index = content.find(end_marker, start_index)
+
+    if start_index == -1 or end_index == -1:
+        print("Marcadores de índice não encontrados no arquivo wiki.")
+        return
+
+    start_index += len(start_marker)
+    new_index_block = "\n\n" + "\n".join(f"- [[{idx}]]" for idx in sorted(index_list)) + "\n\n"
+
+    updated_content = (
+        content[:start_index] +
+        new_index_block +
+        content[end_index:]
+    )
+
+    with open(wiki_path, 'w', encoding='utf-8') as f:
+        f.write(updated_content)
+
+    print(f"Índice da wiki atualizado com {len(index_list)} entradas.")

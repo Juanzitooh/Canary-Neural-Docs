@@ -10,7 +10,7 @@ from pathlib import Path
 
 # Configurações
 INPUT_DIR = "source"  # Diretório com os arquivos de código fonte
-OUTPUT_DIR = "doc"  # Diretório base de saída
+OUTPUT_DIR = "doc/teste"  # Diretório base de saída
 
 def ensure_dir(directory):
     """Cria um diretório se ele não existir"""

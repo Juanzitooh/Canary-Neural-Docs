@@ -14,11 +14,13 @@ class FileAnalyzer:
         Inicializa a estrutura de dados para armazenar os resultados da análise.
         """
         self.current_data = {
-            'classes': [],    # Lista para armazenar os nomes das classes
-            'structs': [],    # Lista para armazenar os nomes das structs
-            'methods': [],    # Lista para armazenar as assinaturas dos métodos
-            'properties': [], # Lista para armazenar as propriedades das classes
-            'enums': []       # Lista para armazenar os enums e seus valores
+            'classes': {},          # Usar um dicionário para armazenar métodos por classe
+            'structs': {},          # Usar um dicionário para armazenar métodos por struct
+            'function_global': [],  # Lista separada para métodos globais
+            'properties': [],       # Propriedades gerais
+            'include': [],          # Arquivos incluídos
+            'inheritances': [],     # Heranças de classes
+            'enums': []             # Enums
         }
         self.current_file = None  # Vai armazenar o arquivo sendo analisado
 
@@ -28,11 +30,13 @@ class FileAnalyzer:
         Limpa quaisquer dados previamente armazenados.
         """
         self.current_data = {
-            'classes': [],
-            'structs': [],
-            'methods': [],
-            'properties': [],
-            'enums': []
+            'classes': {},          # Usar um dicionário para armazenar métodos por classe
+            'structs': {},          # Usar um dicionário para armazenar métodos por struct
+            'function_global': [],  # Lista separada para métodos globais
+            'properties': [],       # Propriedades gerais
+            'include': [],          # Arquivos incluídos
+            'inheritances': [],     # Heranças de classes
+            'enums': []             # Enums
         }
     def analyze_file(self, file_path: Path):
         """Usa a função de análise de arquivo do módulo de análise."""
