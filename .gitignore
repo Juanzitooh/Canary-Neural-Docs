@@ -48,8 +48,7 @@ htmlcov/
 *.bak
 
 # Arquivos gerados do projeto (opcional)
-doc/
-source/
+doc_generator/
 
 # Arquivos JSON temporários ou cache (caso use)
 *.json.tmp
