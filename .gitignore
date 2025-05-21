@@ -53,3 +53,6 @@ source/
 
 # Arquivos JSON temporários ou cache (caso use)
 *.json.tmp
+
+# o arquivo release
+*.exe

@@ -4,14 +4,14 @@ from ..io.setup import setup_directories
 from ..analyser.core import FileAnalyzer
 from ..analyser.markdown_generator import generate_enum_markdown, generate_markdown
 from ..runner.help import generate_hierarchy_links, create_markdown_file, update_wiki_canary_index
+from ..runner.obsidian_helper import abrir_obsidian_ou_alertar
 
 from collections import defaultdict
 
 
-
-def create_obsidian_notes(): 
+def create_obsidian_notes(base_dir): 
     print("criando notas")
-    input_dir, output_dir, enum_dir, doc_dir = setup_directories()
+    input_dir, output_dir, enum_dir, doc_dir = setup_directories(base_dir)
     analyzer = FileAnalyzer()
 
     # Mapeia cada pasta para os filhos que ela deve listar no índice
@@ -80,3 +80,4 @@ def create_obsidian_notes():
         create_markdown_file(folder_index_path, index_content)
     wiki_file_path = doc_dir / "wiki_canary.md"
     update_wiki_canary_index(top_level_indexes, wiki_file_path)
+    abrir_obsidian_ou_alertar(doc_dir)

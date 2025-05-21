@@ -21,11 +21,25 @@ def create_markdown_file(output_path, content):
     with open(output_path, 'w', encoding='utf-8') as md_file:
         md_file.write(content)
 
+import os
+
+def ensure_wiki_file_exists(wiki_path):
+    """
+    Garante que o arquivo wiki_canary.md exista com os marcadores mínimos.
+    """
+    if not os.path.exists(wiki_path):
+        os.makedirs(os.path.dirname(wiki_path), exist_ok=True)
+        with open(wiki_path, 'w', encoding='utf-8') as f:
+            f.write("**Índice da estrutura do canary\n\n*fim indice*\n")
+        print(f" Arquivo criado com base padrão: {wiki_path}")
+
 def update_wiki_canary_index(index_list, wiki_path):
     """
     Atualiza o arquivo wiki_canary.md substituindo o conteúdo entre os marcadores
     '**Índice da estrutura do canary' e '*fim indice*' por uma lista formatada dos índices.
     """
+    ensure_wiki_file_exists(wiki_path)
+
     with open(wiki_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
@@ -36,7 +50,7 @@ def update_wiki_canary_index(index_list, wiki_path):
     end_index = content.find(end_marker, start_index)
 
     if start_index == -1 or end_index == -1:
-        print("Marcadores de índice não encontrados no arquivo wiki.")
+        print(" Marcadores de índice não encontrados no arquivo wiki.")
         return
 
     start_index += len(start_marker)
@@ -51,4 +65,4 @@ def update_wiki_canary_index(index_list, wiki_path):
     with open(wiki_path, 'w', encoding='utf-8') as f:
         f.write(updated_content)
 
-    print(f"Índice da wiki atualizado com {len(index_list)} entradas.")
+    print(f" Índice da wiki atualizado com {len(index_list)} entradas.")

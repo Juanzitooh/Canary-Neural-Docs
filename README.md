@@ -7,6 +7,9 @@
 
 Ferramenta de documentação automatizada para análise do código-fonte do Canary (OTServer), convertendo-o em documentos Markdown interconectados para uso no Obsidian. Ideal para aprendizado e integração com sistemas de IA.
 
+Use o Arquivo do release, com ele só precisa ter o obsidian instalado para vizualizar sua wiki do canary.
+![baixar release executável windwos](https://i.imgur.com/jNLfYwB.png)
+
 ---
 
 ## 👋 Sobre o Projeto
@@ -48,19 +51,33 @@ Olá! Sou **Habdel Edenfield** ([GitHub](https://github.com/Habdel-Edenfield) | 
 
 ## 🚀 Começando
 
-### Pré-requisitos
+### Pré-requisitos para desenvolver
 - Python 3.8+
-- Git instalado
+- Git instalado ( se não tiver, é só baixar o codigo no repositório)
+- Obisidian
 
 ### Instalação Rápida
 ```bash
 git clone https://github.com/Habdel-Edenfield/canary-docs.git
+
 cd canary-docs
 
-# Cole seus arquivos .hpp em:
-cp -R seus-arquivos/ source/src/
+pip install -r requirements.txt
 
-python generate_docs.py
+python main.py
+```
+
+Prefira usar ambientes virtuais para rodar o install requeriments
+
+Ai é só seleciona a pasta do canary, apertar gerar documentação e ta gerado.
+
+Depois é só realizar mudanças testar e participar dos insuees
+
+# Gerar realease (executável com pyinstaller)
+```bash
+
+pyinstaller --onefile --noconsole --name "Doc Generator" --distpath . --icon icone.ico --add-data "icone.ico;." --add-data "background.JPG;." main.py
+
 ```
 
 ## Estrutura de Pastas
