@@ -13,6 +13,7 @@ from pathlib import Path
 from ..runner.run import create_obsidian_notes
 from ..runner.generate_lua_docs import main_lua
 from ..runner.generate_obsidian_docs import main_obsidian_docs
+from ..io.setup import resource_path
 
 root = tk.Tk()
 
@@ -36,8 +37,11 @@ else:
     BASE_DIR = Path(__file__).resolve().parents[2]
 
 # Caminhos dos arquivos incluídos
-icone_file_path = os.path.join(BASE_DIR, "icone.ico")
-background_file_path = os.path.join(BASE_DIR, "background.JPG")
+
+icone_path = resource_path("icone.ico")
+background_path = resource_path("background.JPG")
+
+
 
 class GenerateDocUI():
     # Declaração de variaveis e inicialização da interface

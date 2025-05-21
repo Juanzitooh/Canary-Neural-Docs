@@ -76,7 +76,7 @@ Depois é só realizar mudanças testar e participar dos insuees
 # Gerar realease (executável com pyinstaller)
 ```bash
 
-pyinstaller --onefile --noconsole --name "Doc Generator" --distpath . --icon icone.ico --add-data "icone.ico;." --add-data "background.JPG;." main.py
+pyinstaller --onefile --noconsole --name "Doc Generator" --distpath . --icon icone.ico --add-data "icone.ico;." --add-data "background.JPG;." --add-data ".obsidian;." main.py
 
 ```
 
