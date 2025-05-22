@@ -13,7 +13,7 @@ from collections import defaultdict
 def create_obsidian_notes(base_dir): 
     print("criando notas")
     input_dir, output_dir, enum_dir, doc_dir = setup_directories(base_dir)
-    obsidian_path = resource_path(".obsidian")
+    obsidian_path = resource_path("obsidian")
     analyzer = FileAnalyzer()
 
     # Mapeia cada pasta para os filhos que ela deve listar no índice

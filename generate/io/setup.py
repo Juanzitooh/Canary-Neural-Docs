@@ -19,7 +19,7 @@ def copiar_pasta_se_necessario(origem, destino, sobrescrever=False):
     - sobrescrever: se True, apaga a pasta destino e copia de novo; se False, só copia se não existir
     """
     origem = Path(origem)
-    destino = Path(destino) / origem.name  # Cria a pasta com o mesmo nome no destino
+    destino = Path(destino) / ".obsidian"  # Cria a pasta obsidian no final
 
     if destino.exists():
         if sobrescrever:
