@@ -86,7 +86,7 @@ pyinstaller --onefile --noconsole --name "Doc Generator" --distpath . --icon ico
 └── 📁 src/
     └── ... (Codigo C++ canary)
 📁 doc_generator/ (pasta aberta pelo obsidian)
-└── 📁 .obsidian/(pasta que define a primeira vizualização no cofre, cores da wiki e afins)
+└── 📁 obsidian/(pasta que define a primeira vizualização no cofre, cores da wiki e afins)
 └── 📁 hpp/
     ├── account.md
     ├── player.md
