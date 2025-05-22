@@ -7,8 +7,7 @@
 
 Ferramenta de documentação automatizada para análise do código-fonte do Canary (OTServer), convertendo-o em documentos Markdown interconectados para uso no Obsidian. Ideal para aprendizado e integração com sistemas de IA.
 
-Use o Arquivo do release, com ele só precisa ter o obsidian instalado para vizualizar sua wiki do canary.
-![baixar release executável windwos](https://i.imgur.com/jNLfYwB.png)
+Utilize agora a versão 1.0: para baixar é só [clicar aqui](https://github.com/Juanzitooh/Canary-Neural-Docs/releases/download/v1.0.0/Doc.Generator.rar)
 
 ---
 
@@ -18,10 +17,6 @@ Olá! Sou **Habdel Edenfield** ([GitHub](https://github.com/Habdel-Edenfield) | 
 - Facilitar o entendimento da arquitetura do Canary
 - Criar base de conhecimento para treinamento de IA/RAG
 - Oferecer documentação dinâmica e navegável
-
----
-
-![Preview](https://i.imgur.com/jNLfYwB.png)
 
 ---
 
@@ -49,6 +44,10 @@ Olá! Sou **Habdel Edenfield** ([GitHub](https://github.com/Habdel-Edenfield) | 
 
 ---
 
+![Preview](https://i.imgur.com/jNLfYwB.png)
+
+---
+
 ## 🚀 Começando
 
 ### Pré-requisitos para desenvolver
@@ -71,7 +70,7 @@ Prefira usar ambientes virtuais para rodar o install requeriments
 
 Ai é só seleciona a pasta do canary, apertar gerar documentação e ta gerado.
 
-Depois é só realizar mudanças testar e participar dos insuees
+Caso tenha alguma idéia ou saiba algo que possamos acrescentar de informação abra um issue no repositório, agradecemos toda colaboração !
 
 # Gerar realease (executável com pyinstaller)
 ```bash
@@ -80,14 +79,15 @@ pyinstaller --onefile --noconsole --name "Doc Generator" --distpath . --icon ico
 
 ```
 
-## Estrutura de Pastas
+## Estrutura de Pastas em qualquer servidor canary global ou canary custom
 ```bash
-📁 source/
+📁 Canary/ (pasta a ser selecionada)
 └── 📁 src/
-    └── ... (documentação original canary)
-📁 doc/
+    └── ... (Codigo C++ canary)
+📁 doc_generator/ (pasta aberta pelo obsidian)
+└── 📁 .obsidian/(pasta que define a primeira vizualização no cofre, cores da wiki e afins)
 └── 📁 hpp/
     ├── account.md
     ├── player.md
-    └── ... (documentação gerada)
+    └── ... (documentação gerada automaticamente)
 ```
