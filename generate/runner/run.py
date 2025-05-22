@@ -1,6 +1,6 @@
 #generate/runner/run.py
 
-from ..io.setup import setup_directories, resource_path
+from ..io.setup import setup_directories, resource_path, copiar_pasta_se_necessario
 from ..analyser.core import FileAnalyzer
 from ..analyser.markdown_generator import generate_enum_markdown, generate_markdown
 from ..runner.help import generate_hierarchy_links, create_markdown_file, update_wiki_canary_index
@@ -82,5 +82,5 @@ def create_obsidian_notes(base_dir):
         create_markdown_file(folder_index_path, index_content)
     wiki_file_path = doc_dir / "wiki_canary.md"
     update_wiki_canary_index(top_level_indexes, wiki_file_path)
-    copiar_pasta_se_necessario(obsidian_path, oc_dir, sobrescrever=False)
-    abrir_obsidian_ou_alertar(doc_dir)
+    copiar_pasta_se_necessario(obsidian_path, doc_dir, sobrescrever=False)
+    return abrir_obsidian_ou_alertar(doc_dir)

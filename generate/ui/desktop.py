@@ -30,18 +30,10 @@ directory_assinatura = "./assinaturas"
 directory_extras = "./extras"
 directory_scripts = "./scripts"
 
-# Achar o diretório correto, mesmo dentro do .exe
-if getattr(sys, 'frozen', False):
-    BASE_DIR = sys._MEIPASS
-else:
-    BASE_DIR = Path(__file__).resolve().parents[2]
-
 # Caminhos dos arquivos incluídos
 
-icone_path = resource_path("icone.ico")
-background_path = resource_path("background.JPG")
-
-
+icone_file_path = resource_path("icone.ico")
+background_file_path = resource_path("background.JPG")
 
 class GenerateDocUI():
     # Declaração de variaveis e inicialização da interface
@@ -183,14 +175,19 @@ class GenerateDocUI():
             return
 
         try:
-            create_obsidian_notes(selected_path)
-            #main_lua() # guardado para quando estiver preparado para verificar cpp tb
-            #main_obsidian_docs() # será usado no futuro.
-            messagebox.showinfo("Sucesso", "Documentação gerada com sucesso.")
+            sucesso = create_obsidian_notes(selected_path)
+            if sucesso:
+                messagebox.showinfo("Sucesso", "Documentação gerada com sucesso e Obsidian aberto.")
+            else:
+                messagebox.showwarning(
+                    "Obsidian não instalado",
+                    "Obsidian não está instalado ou não foi encontrado.\n"
+                    "Por favor, instale o Obsidian e gere a documentação novamente."
+                )
         except Exception as e:
             error_msg = f"Ocorreu um erro:\n{str(e)}"
             print(error_msg)
-            traceback.print_exc()  # Mostra a stack trace completa no terminal
+            traceback.print_exc()
             messagebox.showerror("Erro", error_msg)
 
     # Função que define a janela principal e chama a criação de dados dela        

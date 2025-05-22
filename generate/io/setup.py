@@ -1,12 +1,13 @@
 #generate/io/setup.py
 from pathlib import Path
+import sys
+import os
+import shutil
 
 def resource_path(rel_path):
     if getattr(sys, 'frozen', False):
         return os.path.join(sys._MEIPASS, rel_path)
     return os.path.join(Path(__file__).resolve().parents[2], rel_path)
-
-
 
 def copiar_pasta_se_necessario(origem, destino, sobrescrever=False):
     """

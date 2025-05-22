@@ -1,6 +1,7 @@
 import os
 import subprocess
 import json
+import webbrowser
 
 CONFIG_FILE = os.path.join(os.path.expanduser("~"), ".obsidian_helper_config.json")
 
@@ -34,24 +35,19 @@ def localizar_obsidian_exe() -> str | None:
 
     return None
 
-def abrir_obsidian_ou_alertar(vault_path: str):
+def abrir_obsidian_ou_alertar(vault_path: str) -> bool:
     obsidian_exe = localizar_obsidian_exe()
 
     if not obsidian_exe:
         print(" Obsidian não foi encontrado automaticamente.")
-        caminho_manual = input("Digite o caminho completo até o Obsidian.exe (ex: C:\\Users\\SeuUsuario\\AppData\\Local\\Programs\\Obsidian\\Obsidian.exe): ").strip()
-
-        if os.path.isfile(caminho_manual):
-            salvar_caminho_obsidian(caminho_manual)
-            obsidian_exe = caminho_manual
-        else:
-            print(" Caminho inválido. Abortei a tentativa de abrir o Vault.")
-            print(" Baixe o Obsidian aqui, se não tiver: https://obsidian.md/")
-            return
+        print(" Abrindo site oficial para download no navegador...")
+        webbrowser.open("https://obsidian.md/download")
+        return False
 
     if not os.path.isdir(vault_path):
         print(f" O diretório do Vault não existe: {vault_path}")
-        return
+        return False
 
     print(f" Abrindo Vault com Obsidian: {vault_path}")
     subprocess.Popen([obsidian_exe, vault_path])
+    return True
